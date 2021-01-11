@@ -1,0 +1,25 @@
+//verify if a number is odd or even
+import java.util.Scanner;
+class ChkNum {
+
+    boolean isEven(int x){
+        if ((x%2)==0) return true;
+        else return false;
+    }
+}
+
+public class evenodd {
+    public static void main (String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("The number is: ");
+        int n;
+        n=sc.nextInt();
+        ChkNum a= new ChkNum();
+
+
+        if (a.isEven(n)) System.out.println(n + " is even.");
+        else
+            System.out.println(n + " is odd.");
+
+    }
+}
